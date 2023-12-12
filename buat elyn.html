@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Khusus Buat ELYNNN</title>
+        <style type = "text/css" media = "all">
+          body {
+             background-color: linen;
+             height: 100;
+          }
+          h1 {
+             color: maroon;
+             margin-left: 50px;
+          }
+          .open-awal {
+             margin: 0;
+             padding: 0;
+             font-weight: 50%;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+          }
+          .gif-awal {
+             margin: 0;
+             padding: 0;
+             font-weight: 50%;
+             display: flex;
+             justify-content: center;
+               align-items: center;
+                border: 5px #333;
+          }
+          .prolog-kamu {
+             font-weight: 50%;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+          }
+          .button-mau {
+             margin: 0;
+             padding: 0;
+             font-weight: 40%;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+          }
+          .button-gamau {
+             margin: 0;
+             padding: 0;
+             font-weight: 40%;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+          }
+         </style>
+    </head>
+    <body>
+        <h1 class="open-awal"> Hai Cantik!</h1>
+      <div class="gif-awal">
+        <img src="https://c.tenor.com/Z8ezUHZzcLoAAAAC/love.gif" />
+      </div>
+      <div class="prolog-kamu">
+        <h2 class="h1-prolog"> Aku tau mungkin ini terlalu cepet, tapi aku mau kenal lebih dekat sama kamu! 
+            jika memang ini terlalu cepat, aku mau perlahan kita bisa bersama. jika elyn berfikir kita mungkin sulit bersatu karna terhalang tembok yang benar-benar tinggi. cuma sekali lagi aku bilang, 
+            jika kita memang ingin ke lebih serius. pasti bisa kok...
+        </h2>
+      </div>
+        <h1>Elynnnn Maukah kamu menjadi pacarku?</h1>
+      <div class="button-mau">
+        <button id="btn_mau" onclick="alert('I LOVE YOU ELYNNN')">MAU</button>&nbsp;
+        </button>
+      </div>
+
+     <div class="button-gamau">
+        <button id="btn_gamau" onclick="gamau(this)" style="position: absolute">gamau
+        </button>&nbsp;
+     </div>
+    </body>
+    <script> function gamau(id) {
+        var mau = document.getElementById('btn_mau');
+        var i = Math.floor(Math.random() * 300) + 1;
+        var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+        id.style.left = i + "px";
+        id.style.top = j + "px";
+    }
+    </script>
+</html>
